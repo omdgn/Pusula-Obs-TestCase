@@ -1,7 +1,8 @@
 // src/pages/teacher/Students.jsx
 import { useState, useEffect } from "react";
-import { getMyCourses, getCourseStudents } from "../../services/teacherService";
-import { Users, Mail, Loader2, GraduationCap } from "lucide-react";
+import { getMyCourses, getCourseStudents, removeStudentFromCourse } from "../../services/teacherService";
+import { Users, Mail, Loader2, GraduationCap, UserPlus, Trash2 } from "lucide-react";
+import TeacherStudentEnrollment from "../../components/TeacherStudentEnrollment";
 
 export default function Students() {
   const [courses, setCourses] = useState([]);
@@ -9,6 +10,8 @@ export default function Students() {
   const [selectedCourse, setSelectedCourse] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [removing, setRemoving] = useState(null);
+  const [message, setMessage] = useState(null);
 
   useEffect(() => {
     const fetchCourses = async () => {
@@ -51,6 +54,43 @@ export default function Students() {
       setError("Bu dersin öğrencileri yüklenemedi.");
     } finally {
       setLoading(false);
+    }
+  };
+
+  // Öğrenci çıkarma
+  const handleRemoveStudent = async (studentId, studentName) => {
+    if (!confirm(`${studentName} adlı öğrenciyi dersten çıkarmak istediğinize emin misiniz?`)) {
+      return;
+    }
+
+    try {
+      setRemoving(studentId);
+      setError(null);
+      setMessage(null);
+
+      await removeStudentFromCourse(selectedCourse, studentId);
+      setMessage("Öğrenci başarıyla dersten çıkarıldı!");
+
+      // Öğrenci listesini güncelle
+      setStudents(prev => prev.filter(s => s.id !== studentId));
+
+    } catch (err) {
+      console.error("Remove student error:", err);
+      setError("Öğrenci çıkarılırken hata oluştu: " + (err.response?.data?.message || err.message));
+    } finally {
+      setRemoving(null);
+    }
+  };
+
+  // Enrollment değişikliği sonrası refresh
+  const handleEnrollmentChange = async () => {
+    if (selectedCourse) {
+      try {
+        const studentsData = await getCourseStudents(selectedCourse);
+        setStudents(studentsData);
+      } catch (err) {
+        console.error("Refresh students error:", err);
+      }
     }
   };
 
@@ -101,24 +141,48 @@ export default function Students() {
         </p>
       </div>
 
-      {/* Course Selector */}
+      {/* Course Selector and Actions */}
       {courses.length > 0 && (
         <div className="mb-6">
-          <label htmlFor="course-select" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-            Ders Seç:
-          </label>
-          <select
-            id="course-select"
-            value={selectedCourse}
-            onChange={(e) => handleCourseChange(e.target.value)}
-            className="block w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-3 py-2 text-gray-900 dark:text-gray-100 focus:border-indigo-500 focus:ring-indigo-500"
-          >
-            {courses.map((course) => (
-              <option key={course.id} value={course.id}>
-                {course.title}
-              </option>
-            ))}
-          </select>
+          <div className="flex flex-col md:flex-row md:items-end gap-4">
+            <div className="flex-1">
+              <label htmlFor="course-select" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                Ders Seç:
+              </label>
+              <select
+                id="course-select"
+                value={selectedCourse}
+                onChange={(e) => handleCourseChange(e.target.value)}
+                className="block w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-3 py-2 text-gray-900 dark:text-gray-100 focus:border-indigo-500 focus:ring-indigo-500"
+              >
+                {courses.map((course) => (
+                  <option key={course.id} value={course.id}>
+                    {course.title}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {selectedCourse && (
+              <TeacherStudentEnrollment
+                courseId={selectedCourse}
+                onEnrollmentChange={handleEnrollmentChange}
+              />
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Messages */}
+      {error && (
+        <div className="mb-6 p-4 rounded-lg bg-red-50 dark:bg-red-900 text-red-700 dark:text-red-300">
+          {error}
+        </div>
+      )}
+
+      {message && (
+        <div className="mb-6 p-4 rounded-lg bg-green-50 dark:bg-green-900 text-green-700 dark:text-green-300">
+          {message}
         </div>
       )}
 
@@ -129,18 +193,38 @@ export default function Students() {
               key={s.id}
               className="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 shadow"
             >
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-indigo-100 dark:bg-indigo-900 flex items-center justify-center">
-                  <Users className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-indigo-100 dark:bg-indigo-900 flex items-center justify-center">
+                    <Users className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+                      {s.fullName}
+                    </h3>
+                    <p className="flex items-center gap-1 text-gray-600 dark:text-gray-400 text-sm">
+                      <Mail className="w-4 h-4" /> {s.email}
+                    </p>
+                    {s.studentNumber && (
+                      <p className="text-xs text-gray-500 dark:text-gray-500">
+                        Öğrenci No: {s.studentNumber}
+                      </p>
+                    )}
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-                    {s.fullName}
-                  </h3>
-                  <p className="flex items-center gap-1 text-gray-600 dark:text-gray-400 text-sm">
-                    <Mail className="w-4 h-4" /> {s.email}
-                  </p>
-                </div>
+
+                <button
+                  onClick={() => handleRemoveStudent(s.id, s.fullName)}
+                  disabled={removing === s.id}
+                  className="text-red-600 hover:text-red-800 disabled:opacity-50 p-2"
+                  title="Öğrenciyi dersten çıkar"
+                >
+                  {removing === s.id ? (
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                  ) : (
+                    <Trash2 className="w-5 h-5" />
+                  )}
+                </button>
               </div>
 
               {/* Öğrenci bilgileri */}
@@ -162,8 +246,8 @@ export default function Students() {
           <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100 mb-2">
             Bu derse kayıtlı öğrenci bulunmuyor
           </h3>
-          <p className="text-gray-600 dark:text-gray-400">
-            Öğrencileri eklemek için ders detay sayfasını kullanabilirsiniz.
+          <p className="text-gray-600 dark:text-gray-400 mb-4">
+            Yukarıdaki "Öğrenci Ekle" butonunu kullanarak öğrenci ekleyebilirsiniz.
           </p>
         </div>
       )}

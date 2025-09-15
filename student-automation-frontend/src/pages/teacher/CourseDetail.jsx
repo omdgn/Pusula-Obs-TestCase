@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getCourseById, removeStudentFromCourse, getCourseStudents } from "../../services/teacherService";
-import { UserPlus, BookOpen, Calendar, Loader2, Users, Trash2, Eye } from "lucide-react";
+import { getCourseById, removeStudentFromCourse, getCourseStudents, updateCourseStatus } from "../../services/teacherService";
+import { UserPlus, BookOpen, Calendar, Loader2, Users, Trash2, Eye, Edit3, Check, X } from "lucide-react";
 import TeacherStudentEnrollment from "../../components/TeacherStudentEnrollment";
 
 export default function CourseDetail() {
@@ -12,6 +12,9 @@ export default function CourseDetail() {
   const [error, setError] = useState(null);
   const [removing, setRemoving] = useState(null);
   const [message, setMessage] = useState(null);
+  const [editingStatus, setEditingStatus] = useState(false);
+  const [newStatus, setNewStatus] = useState("");
+  const [updatingStatus, setUpdatingStatus] = useState(false);
 
   useEffect(() => {
     const fetchCourseData = async () => {
@@ -26,6 +29,7 @@ export default function CourseDetail() {
 
         setCourse(courseData);
         setStudents(studentsData);
+        setNewStatus(courseData.status); // Initialize status for editing
       } catch (err) {
         console.error("Course fetch error:", err);
         if (err.response?.status === 403) {
@@ -80,6 +84,36 @@ export default function CourseDetail() {
     } finally {
       setRemoving(null);
     }
+  };
+
+  // Ders durumu güncelleme
+  const handleUpdateStatus = async () => {
+    if (!newStatus || newStatus === course.status) {
+      setEditingStatus(false);
+      return;
+    }
+
+    try {
+      setUpdatingStatus(true);
+      setError(null);
+      setMessage(null);
+
+      await updateCourseStatus(id, newStatus);
+      setCourse(prev => ({ ...prev, status: newStatus }));
+      setMessage("Ders durumu başarıyla güncellendi!");
+      setEditingStatus(false);
+
+    } catch (err) {
+      console.error("Update status error:", err);
+      setError("Ders durumu güncellenirken hata oluştu: " + (err.response?.data?.message || err.message));
+    } finally {
+      setUpdatingStatus(false);
+    }
+  };
+
+  const handleCancelStatusEdit = () => {
+    setNewStatus(course.status);
+    setEditingStatus(false);
   };
 
   if (loading) {
@@ -146,16 +180,66 @@ export default function CourseDetail() {
       {/* Course Info Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <div className="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center">
-              <BookOpen className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center">
+                <BookOpen className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
+              </div>
+              <div>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Ders Durumu</p>
+                {editingStatus ? (
+                  <div className="flex items-center gap-2">
+                    <select
+                      value={newStatus}
+                      onChange={(e) => setNewStatus(e.target.value)}
+                      className="text-lg font-semibold bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded px-2 py-1 text-gray-900 dark:text-gray-100"
+                    >
+                      <option value="InProgress">Aktif</option>
+                      <option value="Completed">Tamamlandı</option>
+                      <option value="Cancelled">İptal Edildi</option>
+                    </select>
+                  </div>
+                ) : (
+                  <p className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+                    {course.status === "InProgress" ? "Aktif" : course.status === "Completed" ? "Tamamlandı" : course.status === "Cancelled" ? "İptal Edildi" : "Beklemede"}
+                  </p>
+                )}
+              </div>
             </div>
-            <div>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Ders Durumu</p>
-              <p className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-                {course.status === "InProgress" ? "Aktif" : course.status === "Completed" ? "Tamamlandı" : "Beklemede"}
-              </p>
-            </div>
+
+            {editingStatus ? (
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={handleUpdateStatus}
+                  disabled={updatingStatus}
+                  className="flex items-center gap-1 px-3 py-1 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:opacity-50 text-sm"
+                >
+                  {updatingStatus ? (
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                  ) : (
+                    <Check className="w-4 h-4" />
+                  )}
+                  Kaydet
+                </button>
+                <button
+                  onClick={handleCancelStatusEdit}
+                  disabled={updatingStatus}
+                  className="flex items-center gap-1 px-3 py-1 bg-gray-500 text-white rounded-lg hover:bg-gray-600 disabled:opacity-50 text-sm"
+                >
+                  <X className="w-4 h-4" />
+                  İptal
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={() => setEditingStatus(true)}
+                className="flex items-center gap-1 px-3 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm"
+                title="Ders durumunu düzenle"
+              >
+                <Edit3 className="w-4 h-4" />
+                Düzenle
+              </button>
+            )}
           </div>
         </div>
 
