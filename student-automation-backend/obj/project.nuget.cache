@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PNfL5dchCkM=",
+  "dgSpecHash": "YKYeMj9brHs=",
   "success": true,
-  "projectFilePath": "/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/student-automation-backend.csproj",
+  "projectFilePath": "/Users/omerdogan/Desktop/pusula-student-automationAllFile/student-automation-backend/student-automation-backend.csproj",
   "expectedPackageFiles": [
     "/Users/omerdogan/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/omerdogan/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",

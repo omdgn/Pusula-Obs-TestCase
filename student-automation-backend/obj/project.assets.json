@@ -3561,11 +3561,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/student-automation-backend.csproj",
+      "projectUniqueName": "/Users/omerdogan/Desktop/pusula-student-automationAllFile/student-automation-backend/student-automation-backend.csproj",
       "projectName": "student-automation-backend",
-      "projectPath": "/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/student-automation-backend.csproj",
+      "projectPath": "/Users/omerdogan/Desktop/pusula-student-automationAllFile/student-automation-backend/student-automation-backend.csproj",
       "packagesPath": "/Users/omerdogan/.nuget/packages/",
-      "outputPath": "/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/",
+      "outputPath": "/Users/omerdogan/Desktop/pusula-student-automationAllFile/student-automation-backend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/omerdogan/.nuget/NuGet/NuGet.Config"
