@@ -163,7 +163,7 @@ using (var scope = app.Services.CreateScope())
 }
 
 // Port configuration for cloud deployment
-var port = Environment.GetEnvironmentVariable("PORT") ?? "5055";
+var port = Environment.GetEnvironmentVariable("PORT") ?? "80";
 app.Urls.Add($"http://0.0.0.0:{port}");
 
 app.Run();
