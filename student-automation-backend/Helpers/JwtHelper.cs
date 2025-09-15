@@ -18,8 +18,16 @@ namespace StudentAutomation.Helpers
 
         public string GenerateJwt(User user)
         {
+            Console.WriteLine("GenerateJwt called");
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_jwtSettings.SecretKey);
+
+            // Direct environment variable access as fallback
+            var secretKey = _jwtSettings.SecretKey ??
+                           Environment.GetEnvironmentVariable("JWT_SECRET_KEY") ??
+                           "this-is-a-very-long-super-secret-key-1234567890";
+
+            Console.WriteLine($"Using JWT key length: {secretKey?.Length ?? 0}");
+            var key = Encoding.ASCII.GetBytes(secretKey);
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
