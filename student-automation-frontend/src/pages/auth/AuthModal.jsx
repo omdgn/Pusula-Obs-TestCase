@@ -28,12 +28,9 @@ export default function AuthModal({ mode = "login", onClose }) {
 
     const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted, mode:", formMode);
-    console.log("Form data:", formData);
 
     try {
         if (formMode === "login") {
-            console.log("Attempting login...");
         const res = await login({
             email: formData.email,
             password: formData.password,
@@ -49,7 +46,6 @@ export default function AuthModal({ mode = "login", onClose }) {
 
         // Context'e kullanıcı ve token bilgilerini kaydet
         authLogin(userData, res.token);
-        console.log("Login success:", res);
 
         // Modal'ı kapat
         onClose();
@@ -74,7 +70,6 @@ export default function AuthModal({ mode = "login", onClose }) {
             password: formData.password,
             role: "Student", // backend default zaten Student, garanti için gönderiyoruz
         });
-        console.log("Register success:", res);
 
         // Register için de aynı yapı
         const userData = {
@@ -94,7 +89,7 @@ export default function AuthModal({ mode = "login", onClose }) {
         }
         }
     } catch (err) {
-        console.error("Auth error:", err.response?.data || err.message);
+        // Hata durumunda kullanıcıya uygun mesaj gösterilmeli
     }
     };
 
