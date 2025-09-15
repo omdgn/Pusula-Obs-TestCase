@@ -63,7 +63,11 @@ export default function StudentEnrollment({ courseId, onEnrollmentChange = () =>
 
     } catch (err) {
       console.error("Enroll student error:", err);
-      setError("Öğrenci eklenirken hata oluştu: " + (err.response?.data?.message || err.message));
+      if (err.response?.status === 403) {
+        setError("Bu işlem için yetkiniz bulunmuyor.");
+      } else {
+        setError("Öğrenci eklenirken hata oluştu: " + (err.response?.data?.message || err.message));
+      }
     } finally {
       setEnrolling(null);
     }

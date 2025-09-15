@@ -63,7 +63,11 @@ export default function TeacherStudentEnrollment({ courseId, onEnrollmentChange 
 
     } catch (err) {
       console.error("Enroll student error:", err);
-      setError("Öğrenci eklenirken hata oluştu: " + (err.response?.data?.message || err.message));
+      if (err.response?.status === 403) {
+        setError("Bu derse öğrenci ekleme yetkiniz bulunmuyor. Sadece kendi derslerinize öğrenci ekleyebilirsiniz.");
+      } else {
+        setError("Öğrenci eklenirken hata oluştu: " + (err.response?.data?.message || err.message));
+      }
     } finally {
       setEnrolling(null);
     }
