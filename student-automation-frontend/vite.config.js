@@ -8,6 +8,10 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  build: {
+    outDir: 'dist',
+    chunkSizeWarningLimit: 1000
+  },
   server: {
     proxy: {
       '/api': {
