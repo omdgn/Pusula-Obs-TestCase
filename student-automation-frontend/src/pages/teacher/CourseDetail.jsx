@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getCourseById, removeStudentFromCourse, getCourseStudents, updateCourseStatus } from "../../services/teacherService";
-import { UserPlus, BookOpen, Calendar, Loader2, Users, Trash2, Eye, Edit3, Check, X } from "lucide-react";
+import { UserPlus, BookOpen, Calendar, Loader2, Users, Trash2, Eye, Edit3, Check, X, ClipboardList, Award } from "lucide-react";
 import TeacherStudentEnrollment from "../../components/TeacherStudentEnrollment";
+import CourseDetailsModal from "../../components/CourseDetailsModal";
+import AttendanceModal from "../../components/AttendanceModal";
+import GradesModal from "../../components/GradesModal";
 
 export default function CourseDetail() {
   const { id } = useParams();
@@ -15,6 +18,9 @@ export default function CourseDetail() {
   const [editingStatus, setEditingStatus] = useState(false);
   const [newStatus, setNewStatus] = useState("");
   const [updatingStatus, setUpdatingStatus] = useState(false);
+  const [showDetailsModal, setShowDetailsModal] = useState(false);
+  const [showAttendanceModal, setShowAttendanceModal] = useState(false);
+  const [showGradesModal, setShowGradesModal] = useState(false);
 
   useEffect(() => {
     const fetchCourseData = async () => {
@@ -349,6 +355,58 @@ export default function CourseDetail() {
           </div>
         )}
       </div>
+
+      {/* Action Buttons */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+        <button
+          onClick={() => setShowDetailsModal(true)}
+          className="flex items-center justify-center gap-3 p-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-2xl hover:from-blue-600 hover:to-blue-700 transition-all shadow-lg"
+        >
+          <Eye className="w-6 h-6" />
+          <span className="font-semibold">Detaylar</span>
+        </button>
+
+        <button
+          onClick={() => setShowAttendanceModal(true)}
+          className="flex items-center justify-center gap-3 p-6 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-2xl hover:from-green-600 hover:to-green-700 transition-all shadow-lg"
+        >
+          <ClipboardList className="w-6 h-6" />
+          <span className="font-semibold">Yoklama</span>
+        </button>
+
+        <button
+          onClick={() => setShowGradesModal(true)}
+          className="flex items-center justify-center gap-3 p-6 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-2xl hover:from-purple-600 hover:to-purple-700 transition-all shadow-lg"
+        >
+          <Award className="w-6 h-6" />
+          <span className="font-semibold">Not Girişi</span>
+        </button>
+      </div>
+
+      {/* Modals */}
+      {showDetailsModal && (
+        <CourseDetailsModal
+          course={course}
+          students={students}
+          onClose={() => setShowDetailsModal(false)}
+        />
+      )}
+
+      {showAttendanceModal && (
+        <AttendanceModal
+          courseId={id}
+          courseName={course?.title}
+          onClose={() => setShowAttendanceModal(false)}
+        />
+      )}
+
+      {showGradesModal && (
+        <GradesModal
+          courseId={id}
+          courseName={course?.title}
+          onClose={() => setShowGradesModal(false)}
+        />
+      )}
     </div>
   );
 }
