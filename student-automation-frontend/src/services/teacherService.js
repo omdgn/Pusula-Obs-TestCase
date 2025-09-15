@@ -201,3 +201,9 @@ export const getStudentCourseAttendance = async (studentId, courseId) => {
   const response = await api.get(`/api/attendance/student/${studentId}/course/${courseId}`);
   return response.data;
 };
+
+// Tüm öğrencileri görüntüle (Teacher için)
+export const getAllStudents = async () => {
+  const response = await api.get("/api/student");
+  return response.data;
+};

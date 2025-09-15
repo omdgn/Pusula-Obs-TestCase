@@ -8,6 +8,7 @@ import StudentDetail from "../admin/StudentDetail";
 import Teachers from "../admin/Teachers";
 import TeacherDetail from "../admin/TeacherDetail";
 import Courses from "../admin/Courses";
+import CourseDetail from "../admin/CourseDetail";
 
 import { getDashboardStats } from "../../services/adminService";
 import {
@@ -290,6 +291,7 @@ export default function AdminDashboard() {
         <Route path="/teachers" element={<Teachers />} />
         <Route path="/teachers/:id" element={<TeacherDetail />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/courses/:id" element={<CourseDetail />} />
         <Route path="*" element={<Navigate to="/admin-dashboard" replace />} />
       </Routes>
     </AdminLayout>

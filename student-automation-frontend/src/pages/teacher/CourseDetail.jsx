@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getCourseById, addStudentToCourse, removeStudentFromCourse, getCourseStudents } from "../../services/teacherService";
+import { getCourseById, removeStudentFromCourse, getCourseStudents } from "../../services/teacherService";
 import { UserPlus, BookOpen, Calendar, Loader2, Users, Trash2, Eye } from "lucide-react";
+import TeacherStudentEnrollment from "../../components/TeacherStudentEnrollment";
 
 export default function CourseDetail() {
   const { id } = useParams();
@@ -9,8 +10,7 @@ export default function CourseDetail() {
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [newStudentId, setNewStudentId] = useState("");
-  const [adding, setAdding] = useState(false);
+  const [removing, setRemoving] = useState(null);
   const [message, setMessage] = useState(null);
 
   useEffect(() => {
@@ -45,52 +45,40 @@ export default function CourseDetail() {
     }
   }, [id]);
 
-  const handleAddStudent = async (e) => {
-    e.preventDefault();
-    if (!newStudentId.trim()) {
-      setMessage("Lütfen öğrenci ID'si girin.");
-      return;
-    }
-
-    try {
-      setAdding(true);
-      setMessage(null);
-
-      await addStudentToCourse(id, parseInt(newStudentId));
-      setMessage("Öğrenci başarıyla eklendi!");
-      setNewStudentId("");
-
-      // Öğrenci listesini yeniden yükle
-      const studentsData = await getCourseStudents(id);
-      setStudents(studentsData);
-    } catch (err) {
-      console.error("Add student error:", err);
-      setMessage("Öğrenci eklenirken bir hata oluştu.");
-    } finally {
-      setAdding(false);
-    }
+  // Enrollment değişikliği sonrası refresh
+  const handleEnrollmentChange = () => {
+    const fetchStudentsData = async () => {
+      try {
+        const studentsData = await getCourseStudents(id);
+        setStudents(studentsData);
+      } catch (err) {
+        console.error("Refresh students error:", err);
+      }
+    };
+    fetchStudentsData();
   };
 
-  const handleRemoveStudent = async (studentId) => {
-    if (!confirm("Bu öğrenciyi dersten çıkarmak istediğinize emin misiniz?")) {
+  const handleRemoveStudent = async (studentId, studentName) => {
+    if (!confirm(`${studentName} adlı öğrenciyi dersten çıkarmak istediğinize emin misiniz?`)) {
       return;
     }
 
     try {
-      setAdding(true);
+      setRemoving(studentId);
+      setError(null);
       setMessage(null);
 
       await removeStudentFromCourse(id, studentId);
       setMessage("Öğrenci başarıyla dersten çıkarıldı!");
 
-      // Öğrenci listesini yeniden yükle
-      const studentsData = await getCourseStudents(id);
-      setStudents(studentsData);
+      // Öğrenci listesini güncelle
+      setStudents(prev => prev.filter(s => s.id !== studentId));
+
     } catch (err) {
       console.error("Remove student error:", err);
-      setMessage("Öğrenci çıkarılırken bir hata oluştu.");
+      setError("Öğrenci çıkarılırken hata oluştu: " + (err.response?.data?.message || err.message));
     } finally {
-      setAdding(false);
+      setRemoving(null);
     }
   };
 
@@ -200,100 +188,83 @@ export default function CourseDetail() {
         </div>
       </div>
 
-      {/* Add Student Form */}
-      <div className="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 mb-8">
-        <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2">
-          <UserPlus className="w-5 h-5" />
-          Öğrenci Ekle
-        </h2>
-        <form onSubmit={handleAddStudent} className="flex gap-3">
-          <input
-            type="number"
-            placeholder="Öğrenci ID'si"
-            value={newStudentId}
-            onChange={(e) => setNewStudentId(e.target.value)}
-            className="flex-1 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 px-3 py-2 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-indigo-500"
-            required
-          />
-          <button
-            type="submit"
-            disabled={adding}
-            className="inline-flex items-center gap-2 px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 disabled:opacity-50"
-          >
-            {adding ? (
-              <Loader2 className="w-4 h-4 animate-spin" />
-            ) : (
-              <UserPlus className="w-4 h-4" />
-            )}
-            {adding ? "Ekleniyor..." : "Ekle"}
-          </button>
-        </form>
-      </div>
+      {/* Messages */}
+      {error && (
+        <div className="mb-6 p-4 rounded-lg bg-red-50 dark:bg-red-900 text-red-700 dark:text-red-300">
+          {error}
+        </div>
+      )}
+
+      {message && (
+        <div className="mb-6 p-4 rounded-lg bg-green-50 dark:bg-green-900 text-green-700 dark:text-green-300">
+          {message}
+        </div>
+      )}
 
       {/* Students List */}
       <div className="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
-        <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2">
-          <Users className="w-5 h-5" />
-          Kayıtlı Öğrenciler ({students.length})
-        </h2>
+        <div className="flex justify-between items-center mb-6">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+            Kayıtlı Öğrenciler ({students.length})
+          </h2>
+          <TeacherStudentEnrollment
+            courseId={id}
+            onEnrollmentChange={handleEnrollmentChange}
+          />
+        </div>
 
         {students.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {students.map((student) => (
               <div
                 key={student.id}
-                className="flex items-center justify-between p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-700"
+                className="flex items-center justify-between p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center">
-                    <Users className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
+                  <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
+                    <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                   </div>
                   <div>
-                    <p className="font-medium text-gray-900 dark:text-gray-100">
+                    <div className="font-medium text-gray-900 dark:text-gray-100">
                       {student.fullName}
-                    </p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                    </div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">
                       {student.email}
-                    </p>
+                    </div>
+                    {student.studentNumber && (
+                      <div className="text-xs text-gray-500">
+                        No: {student.studentNumber}
+                      </div>
+                    )}
                   </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <button
-                    onClick={() => alert(`Öğrenci ID: ${student.id}`)}
-                    className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-                  >
-                    <Eye className="w-4 h-4" />
-                  </button>
-                  <button
-                    onClick={() => handleRemoveStudent(student.id)}
-                    disabled={adding}
-                    className="text-red-600 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300 disabled:opacity-50"
-                  >
+                <button
+                  onClick={() => handleRemoveStudent(student.id, student.fullName)}
+                  disabled={removing === student.id}
+                  className="text-red-600 hover:text-red-800 disabled:opacity-50 p-2"
+                  title="Öğrenciyi dersten çıkar"
+                >
+                  {removing === student.id ? (
+                    <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-red-600"></div>
+                  ) : (
                     <Trash2 className="w-4 h-4" />
-                  </button>
-                </div>
+                  )}
+                </button>
               </div>
             ))}
           </div>
         ) : (
-          <div className="text-center py-12">
+          <div className="text-center py-8">
             <Users className="w-16 h-16 text-gray-400 mx-auto mb-4" />
             <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100 mb-2">
-              Henüz öğrenci eklenmemiş
+              Henüz kayıtlı öğrenci yok
             </h3>
-            <p className="text-gray-600 dark:text-gray-400">
-              Bu derse henüz öğrenci kaydı yapılmamış.
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              Bu derse henüz hiç öğrenci eklenmemiş.
             </p>
           </div>
         )}
       </div>
-
-      {/* Message */}
-      {message && (
-        <div className="mt-4 p-4 rounded-lg bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-center">
-          {message}
-        </div>
-      )}
     </div>
   );
 }
