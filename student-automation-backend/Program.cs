@@ -21,7 +21,7 @@ var jwtKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY") ??
              builder.Configuration["JwtSettings:SecretKey"] ??
              "this-is-a-very-long-super-secret-key-1234567890"; // hardcoded fallback
 
-Console.WriteLine($"JWT Key length: {jwtKey?.Length ?? 0} characters");
+// JWT configured successfully
 var keyBytes = Encoding.ASCII.GetBytes(jwtKey);
 
 builder.Services.AddAuthentication(options =>

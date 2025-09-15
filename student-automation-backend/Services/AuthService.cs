@@ -57,25 +57,15 @@ namespace StudentAutomation.Services
 
         public async Task<AuthResponseDto> LoginAsync(LoginDto dto)
         {
-            Console.WriteLine($"Login attempt for: {dto.Email}");
             var user = _context.Users.FirstOrDefault(u => u.Email == dto.Email);
             if (user == null)
-            {
-                Console.WriteLine("User not found");
-                throw new Exception("Kullanıcı bulunamadı.");
-            }
+                throw new Exception("Email veya şifre hatalı.");
 
-            Console.WriteLine("User found, checking password");
             var passwordMatch = BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash);
             if (!passwordMatch)
-            {
-                Console.WriteLine("Password verification failed");
-                throw new Exception("Geçersiz şifre.");
-            }
+                throw new Exception("Email veya şifre hatalı.");
 
-            Console.WriteLine("Password OK, generating JWT token");
             var token = _jwtHelper.GenerateJwt(user);
-            Console.WriteLine($"JWT token generated successfully, length: {token?.Length ?? 0}");
 
             return new AuthResponseDto
             {
