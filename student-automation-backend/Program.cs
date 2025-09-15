@@ -15,8 +15,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<JwtSettings>(
     builder.Configuration.GetSection("JwtSettings"));
 
-// JWT Authentication
-var jwtKey = builder.Configuration["JwtSettings:SecretKey"] ?? throw new InvalidOperationException("JWT SecretKey is not configured");
+// JWT Authentication - Environment variable or appsettings
+var jwtKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY") ??
+             builder.Configuration["JwtSettings:SecretKey"] ??
+             throw new InvalidOperationException("JWT SecretKey is not configured");
 var keyBytes = Encoding.ASCII.GetBytes(jwtKey);
 
 builder.Services.AddAuthentication(options =>
@@ -43,8 +45,12 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
     });
 
+// Database connection - Environment variable or appsettings
+var connectionString = Environment.GetEnvironmentVariable("DATABASE_URL") ??
+                      builder.Configuration.GetConnectionString("DefaultConnection");
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(connectionString));
 
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserService, UserService>();
@@ -155,5 +161,9 @@ using (var scope = app.Services.CreateScope())
         Console.ResetColor();
     }
 }
+
+// Port configuration for cloud deployment
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5055";
+app.Urls.Add($"http://0.0.0.0:{port}");
 
 app.Run();
