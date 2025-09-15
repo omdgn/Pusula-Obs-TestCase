@@ -28,9 +28,12 @@ export default function AuthModal({ mode = "login", onClose }) {
 
     const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Form submitted, mode:", formMode);
+    console.log("Form data:", formData);
 
     try {
         if (formMode === "login") {
+            console.log("Attempting login...");
         const res = await login({
             email: formData.email,
             password: formData.password,
