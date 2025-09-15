@@ -48,17 +48,22 @@ export default function AuthModal({ mode = "login", onClose }) {
         authLogin(userData, res.token);
         console.log("Login success:", res);
 
+        // Modal'ı kapat
+        onClose();
+
         // Rol bazlı yönlendirme
-        if (res.role === "Student") {
-            navigate("/student-dashboard");
-        } else if (res.role === "Teacher") {
-            navigate("/teacher-dashboard");
-        } else if (res.role === "Admin") {
-            navigate("/admin-dashboard");
-        } else {
-            // Rol bilgisi yoksa veya tanımlanmamışsa default Student olarak kabul et
-            navigate("/student-dashboard");
-        }
+        setTimeout(() => {
+            if (res.role === "Student") {
+                navigate("/student-dashboard");
+            } else if (res.role === "Teacher") {
+                navigate("/teacher-dashboard");
+            } else if (res.role === "Admin") {
+                navigate("/admin-dashboard");
+            } else {
+                // Rol bilgisi yoksa veya tanımlanmamışsa default Student olarak kabul et
+                navigate("/student-dashboard");
+            }
+        }, 100);
         } else {
         const res = await register({
             fullName: formData.fullName,
@@ -79,10 +84,12 @@ export default function AuthModal({ mode = "login", onClose }) {
         // Register sonrası direkt student dashboard'a yönlendir
         if (res.token) {
             authLogin(userData, res.token);
-            navigate("/student-dashboard");
+            onClose(); // modal kapat
+            setTimeout(() => {
+                navigate("/student-dashboard");
+            }, 100);
         }
         }
-        onClose(); // modal kapat
     } catch (err) {
         console.error("Auth error:", err.response?.data || err.message);
     }
