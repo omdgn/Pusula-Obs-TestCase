@@ -135,29 +135,35 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// Veritabanı bağlantı testi (console log)
+// Database migration and connection test
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     try
     {
+        // Run migrations automatically
+        await dbContext.Database.MigrateAsync();
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("✅ Database migrations applied successfully!");
+        Console.ResetColor();
+
         if (dbContext.Database.CanConnect())
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("✅ Veritabanına bağlantı başarılı!");
+            Console.WriteLine("✅ Database connection successful!");
             Console.ResetColor();
         }
         else
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("❌ Veritabanına bağlanılamadı!");
+            Console.WriteLine("❌ Cannot connect to database!");
             Console.ResetColor();
         }
     }
     catch (Exception ex)
     {
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine($"❌ DB bağlantı hatası: {ex.Message}");
+        Console.WriteLine($"❌ Database error: {ex.Message}");
         Console.ResetColor();
     }
 }
