@@ -1,0 +1,462 @@
+.navsec {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navsec .logo {
+    display: flex;
+    gap: 5px;
+}
+
+.navsec .nav__right {
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.toolDiv {
+    display: flex;
+    gap: 12px;
+    @media(width <= 1360px) {
+        gap: 8px;
+    }
+}
+
+[lang="es"] {
+    .toolDiv {
+        @media(width <= 1800px) {
+            gap: 10px;
+            font-size: 13px;
+        }
+        @media(width <= 1360px) {
+            font-size: 12px;
+        }
+    }
+    .toolDiv2 {
+        margin-left: 0;
+    }
+}
+
+.content-sec {
+    margin-top: 50px;
+}
+
+.rownr {
+    display: none;
+}
+
+.dont-break-out {
+    max-height: 100%;
+    width: 100%;
+}
+
+.sidebarinfo {
+    display: none;
+}
+
+.navbar {
+    display: flex
+}
+
+.content-sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .leftbar,
+.content-sec .left {
+    width: 100% !important;
+}
+
+.footer {
+    margin-top: 0px !important;
+}
+
+.nav__right__btn {
+    display: flex;
+    gap: 10px;
+    margin-left: 12px;
+    align-items: center;
+}
+
+.nav__right__btn a span,
+.nav__right__btn button {
+    font-size: 16px !important;
+}
+
+.nav__right__btn a,
+.nav__right__btn button {
+    transition: 0.3s ease !important;
+    cursor: pointer !important;
+    align-items: center !important;
+    padding: 0px 10px !important;
+    height: 30px;
+}
+
+.nav__right__btn a:hover,
+.login__btn:hover {
+    box-shadow: var(--box-inverse-shadow) !important;
+}
+
+.nav__premium {
+    background-color: var(--color-yellow) !important;
+}
+
+.navsec .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navsec .logo a {
+    display: flex;
+    align-items: center;
+
+}
+
+.login__btn {
+    background-color: var(--color-purple) !important;
+}
+
+.navBtn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 4px 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: var(--border-default);
+    box-shadow: var(--box-shadow);
+    font-size: 14px !important;
+}
+
+nav a {
+    text-decoration: none !important;
+}
+
+.account__btn {
+    background-color: var(--color-green) !important;
+    color: var(--color-light) !important;
+    position: relative;
+}
+
+.account_dropdown {
+    display: block;
+    position: absolute;
+    width: 180px;
+    height: auto;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    right: 10px;
+    z-index: 99999999;
+    transition: 0.2s ease !important;
+    overflow: hidden;
+    height: 0;
+    max-height: fit-content;
+}
+
+.account_dropdown.active {
+    height: 250px;
+    box-shadow: var(--box-shadow);
+    border: var(--border-default);
+}
+
+.account__btn img {
+    width: 20px;
+    height: 20px;
+    rotate: 0deg;
+    transition: 0.3ms ease !important;
+}
+
+.account__btn img.rotate {
+    rotate: 180deg;
+}
+
+.account_dropdown .user-info strong {
+    color: var(--color-dark);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    display: block;
+}
+
+.account_dropdown .user-info {
+    padding: 8px;
+}
+
+.account_dropdown .user-info span {
+    color: var(--color-darkgray);
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.account_dropdown hr {
+    border: 0px;
+    border-top: 1px solid var(--border-color);
+    margin: 0;
+}
+
+.account_dropdown .pages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 8px 0;
+    gap: 4px;
+}
+
+.account_dropdown a {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--color-dark);
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 4px 8px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.account_dropdown a:hover {
+    background-color: var(--color-f3f3f3);
+}
+
+.search-top {
+    margin-left: 0px !important;
+}
+
+.toolDiv2 {
+    margin-left: 8px;
+}
+
+#search-icon-image {
+    width: 20px;
+}
+
+.header__sidebar {
+    width: 100%;
+    background: var(--color-light);
+    z-index: 100000;
+    border: var(--border-default);
+    box-shadow: var(--box-inverse-shadow);
+    margin-bottom: 5px;
+    position: relative;
+}
+
+
+.header__sidebar .nav__right {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.nav__right label {
+    max-width: fit-content !important;
+}
+
+
+
+.header__sidebar .nav__right__btn {
+    flex-direction: column-reverse;
+    margin-top: 15px !important;
+}
+
+.header__sidebar .nav__right__btn a {
+    justify-content: center !important;
+    width: 100%;
+    text-align: center !important;
+}
+
+.header__sidebar .toolDiv2 {
+    margin-left: 0px !important;
+    margin-top: 15px !important;
+}
+
+.header__sidebar a {
+    color: var(--color-dark);
+    text-decoration: none;
+    font-size: 16px !important;
+}
+
+.header__sidebar .toolDiv,
+.header__sidebar .navbar,
+.header__sidebar .nav__right__btn {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0px !important;
+}
+
+.header__sidebar .toolDiv,
+.header__sidebar .nav__right__btn {
+    padding: 30px 20px !important;
+
+}
+
+.header__sidebar .toolDiv {
+    border-bottom: var(--border-default);
+}
+
+.header__sidebar {
+    display: none;
+}
+
+.menu__icon img {
+    max-width: 28px;
+    max-height: 28px;
+    transition: 0.3s ease;
+    background: var(--color-dark);
+    transform: translateY(2px);
+    cursor: pointer;
+    display: none;
+}
+
+.menu__icon img:hover {
+    transform: scale(1.02)
+}
+
+.navbar .toolDiv:first-child a[data-lang="en"]:first-child {
+    position: relative;
+
+    &::after {
+        content: url("/web_assets/frontend/images/new-icon/improved-header.svg");
+        width: 52px;
+        margin-left: 4px;
+    }
+}
+
+
+.navbar .toolDiv:first-child a:nth-child(2) {
+    position: relative;
+
+    &::after {
+        content: url("/web_assets/frontend/images/new-icon/new-label.svg");
+        width: 24px;
+        margin-left: 4px;
+    }
+}
+
+@media only screen and (max-width: 1550px) and (min-width: 1260px) {
+    .navbar .toolDiv:last-child a:last-child {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1336px) and (min-width: 1260px) {
+    .nav__right__top {
+        gap: 0px !important
+    }
+
+    .nav__right__btn a img {
+        display: none;
+
+    }
+}
+
+
+@media only screen and (max-width: 1260px) {
+    .menu__icon img {
+        display: block;
+    }
+
+    .header__sidebar.active {
+        display: block;
+    }
+
+    .header .navbar {
+        display: none;
+    }
+
+    .nav__bar__premium {
+        display: none;
+    }
+
+    .header__sidebar .nav__premium,
+    .header__sidebar .chat__button {
+        max-width: 300px;
+    }
+
+    .header__sidebar .toolDiv,
+    .header__sidebar .toolDiv2 {
+        margin: auto !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    #app__header--color-black {
+        position: absolute;
+        left: 104px;
+    }
+}
+
+.sales__banner {
+    background: url('/web_assets/frontend/images/banners/sale-banner.svg');
+    width: 100%;
+    height: 45px;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #B34200;
+    gap: 4px;
+}
+
+.sales__banner span {
+    font-weight: 700;
+}
+
+#chat-widget-minimized {
+    display: none !important;
+}
+
+#chat-widget-container {
+    max-height: 614px !important;
+    right: 35px !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .chat__button {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .nav__right__btn a,
+    .nav__right__btn button {
+        height: 24px;
+        padding: 0px 2px !important;
+        font-size: 12px !important;
+    }
+
+    .navsec .logo {
+        margin-top: 0;
+    }
+
+    #search-icon-image {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media only screen and (max-width: 1336px) and (min-width: 1260px) {
+    .nav__right__top {
+        gap: 0px !important
+    }
+
+    .nav__right__btn a img {
+        display: none;
+
+    }
+}

@@ -1,0 +1,13 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ArchiveBox" clip-path="url(#clip0_405_2881)">
+<path id="Vector" d="M26.9318 28.1248H3.06818C2.75173 28.1248 2.44824 27.999 2.22448 27.7753C2.00071 27.5515 1.875 27.248 1.875 26.9316V6.64748L4.26136 1.87476H25.7386L28.125 6.64748V26.9316C28.125 27.248 27.9993 27.5515 27.7755 27.7753C27.5518 27.999 27.2483 28.1248 26.9318 28.1248Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M1.875 6.64746H28.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M15 11.4202V23.352" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M10.2285 18.5793L15.0012 23.3521L19.774 18.5793" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_405_2881">
+<rect width="30" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg>

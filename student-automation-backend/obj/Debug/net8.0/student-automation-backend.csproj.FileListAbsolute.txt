@@ -1,0 +1,440 @@
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/student-automation-backend.csproj.AssemblyReference.cache
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/student-automation-backend.GeneratedMSBuildEditorConfig.editorconfig
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/student-automation-backend.AssemblyInfoInputs.cache
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/student-automation-backend.AssemblyInfo.cs
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/student-automation-backend.csproj.CoreCompileInputs.cache
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/student-automation-backend.MvcApplicationPartsAssemblyInfo.cs
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/student-automation-backend.MvcApplicationPartsAssemblyInfo.cache
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/appsettings.Development.json
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/appsettings.json
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/student-automation-backend
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/student-automation-backend.deps.json
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/student-automation-backend.runtimeconfig.json
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/student-automation-backend.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/student-automation-backend.pdb
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/BCrypt.Net-Next.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Humanizer.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.Build.Locator.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Mono.TextTemplating.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Npgsql.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/System.CodeDom.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/System.Composition.AttributedModel.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/System.Composition.Convention.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/System.Composition.Hosting.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/System.Composition.Runtime.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/System.Composition.TypedParts.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/System.IO.Pipelines.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/System.Text.Encodings.Web.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/System.Text.Json.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/staticwebassets.build.json
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/staticwebassets.development.json
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/staticwebassets/msbuild.student-automation-backend.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/staticwebassets/msbuild.build.student-automation-backend.props
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.student-automation-backend.props
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.student-automation-backend.props
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/scopedcss/bundle/student-automation-backend.styles.css
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/student-.85282EE3.Up2Date
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/student-automation-backend.dll
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/refint/student-automation-backend.dll
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/student-automation-backend.pdb
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/student-automation-backend.genruntimeconfig.cache
+/Users/omerdogan/Desktop/student-automation-backend/obj/Debug/net8.0/ref/student-automation-backend.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/Users/omerdogan/Desktop/student-automation-backend/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/appsettings.Development.json
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/appsettings.json
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/student-automation-backend
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/student-automation-backend.deps.json
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/student-automation-backend.runtimeconfig.json
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/student-automation-backend.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/student-automation-backend.pdb
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/BCrypt.Net-Next.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Humanizer.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.Build.Locator.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Mono.TextTemplating.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Npgsql.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/System.CodeDom.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/System.Composition.AttributedModel.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/System.Composition.Convention.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/System.Composition.Hosting.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/System.Composition.Runtime.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/System.Composition.TypedParts.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/System.IO.Pipelines.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/System.Text.Encodings.Web.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/System.Text.Json.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/student-automation-backend.csproj.AssemblyReference.cache
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/student-automation-backend.GeneratedMSBuildEditorConfig.editorconfig
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/student-automation-backend.AssemblyInfoInputs.cache
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/student-automation-backend.AssemblyInfo.cs
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/student-automation-backend.csproj.CoreCompileInputs.cache
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/student-automation-backend.MvcApplicationPartsAssemblyInfo.cs
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/student-automation-backend.MvcApplicationPartsAssemblyInfo.cache
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/staticwebassets.build.json
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/staticwebassets.development.json
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/staticwebassets/msbuild.student-automation-backend.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/staticwebassets/msbuild.build.student-automation-backend.props
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.student-automation-backend.props
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.student-automation-backend.props
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/scopedcss/bundle/student-automation-backend.styles.css
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/student-.85282EE3.Up2Date
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/student-automation-backend.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/refint/student-automation-backend.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/student-automation-backend.pdb
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/student-automation-backend.genruntimeconfig.cache
+/Users/omerdogan/Desktop/student-automation-backend kopyası/obj/Debug/net8.0/ref/student-automation-backend.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/swagger/examples/attendance-examples.json
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/swagger/examples/auth-examples.json
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/Swashbuckle.AspNetCore.Annotations.dll
+/Users/omerdogan/Desktop/student-automation-backend kopyası/bin/Debug/net8.0/swagger/swagger-config.json
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/appsettings.Development.json
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/appsettings.json
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/swagger/examples/attendance-examples.json
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/swagger/examples/auth-examples.json
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/swagger/swagger-config.json
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/student-automation-backend
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/student-automation-backend.deps.json
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/student-automation-backend.runtimeconfig.json
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/student-automation-backend.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/student-automation-backend.pdb
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/BCrypt.Net-Next.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Humanizer.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.Build.Locator.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Mono.TextTemplating.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Npgsql.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Swashbuckle.AspNetCore.Annotations.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/System.CodeDom.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/System.Composition.AttributedModel.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/System.Composition.Convention.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/System.Composition.Hosting.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/System.Composition.Runtime.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/System.Composition.TypedParts.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/System.IO.Pipelines.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/System.Text.Encodings.Web.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/System.Text.Json.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/student-automation-backend.csproj.AssemblyReference.cache
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/student-automation-backend.GeneratedMSBuildEditorConfig.editorconfig
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/student-automation-backend.AssemblyInfoInputs.cache
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/student-automation-backend.AssemblyInfo.cs
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/student-automation-backend.csproj.CoreCompileInputs.cache
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/student-automation-backend.MvcApplicationPartsAssemblyInfo.cs
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/student-automation-backend.MvcApplicationPartsAssemblyInfo.cache
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/staticwebassets.build.json
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/staticwebassets.development.json
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/staticwebassets/msbuild.student-automation-backend.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/staticwebassets/msbuild.build.student-automation-backend.props
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.student-automation-backend.props
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.student-automation-backend.props
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/scopedcss/bundle/student-automation-backend.styles.css
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/student-.85282EE3.Up2Date
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/student-automation-backend.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/refint/student-automation-backend.dll
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/student-automation-backend.pdb
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/student-automation-backend.genruntimeconfig.cache
+/Users/omerdogan/Desktop/student-automationAllFiles/student-automation-backend/obj/Debug/net8.0/ref/student-automation-backend.dll

@@ -1,0 +1,8 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 2H19" stroke="#504E40" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 10H19" stroke="#504E40" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 18H19" stroke="#504E40" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 3.00312C2.55228 3.00312 3 2.55471 3 2.00156C3 1.44841 2.55228 1 2 1C1.44772 1 1 1.44841 1 2.00156C1 2.55471 1.44772 3.00312 2 3.00312Z" fill="#504E40"/>
+<path d="M2 11.0012C2.55228 11.0012 3 10.5528 3 9.99961C3 9.44646 2.55228 8.99805 2 8.99805C1.44772 8.99805 1 9.44646 1 9.99961C1 10.5528 1.44772 11.0012 2 11.0012Z" fill="#504E40"/>
+<path d="M2 18.9992C2.55228 18.9992 3 18.5508 3 17.9977C3 17.4445 2.55228 16.9961 2 16.9961C1.44772 16.9961 1 17.4445 1 17.9977C1 18.5508 1.44772 18.9992 2 18.9992Z" fill="#504E40"/>
+</svg>

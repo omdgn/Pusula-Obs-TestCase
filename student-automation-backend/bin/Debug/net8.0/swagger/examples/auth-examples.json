@@ -1,0 +1,48 @@
+{
+  "login": {
+    "admin": {
+      "email": "admin@example.com",
+      "password": "admin123"
+    },
+    "teacher": {
+      "email": "teacher@example.com",
+      "password": "teacher123"
+    },
+    "student": {
+      "email": "student@example.com",
+      "password": "student123"
+    }
+  },
+  "register": {
+    "admin": {
+      "fullName": "System Administrator",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "Admin"
+    },
+    "teacher": {
+      "fullName": "John Teacher",
+      "email": "john.teacher@example.com",
+      "password": "teacher123",
+      "role": "Teacher"
+    },
+    "student": {
+      "fullName": "Jane Student",
+      "email": "jane.student@example.com",
+      "password": "student123",
+      "role": "Student"
+    }
+  },
+  "expected_response": {
+    "login_success": {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "expiration": "2025-01-16T10:00:00Z",
+      "user": {
+        "id": "12345678-1234-1234-1234-123456789012",
+        "email": "admin@example.com",
+        "fullName": "System Administrator",
+        "role": "Admin"
+      }
+    }
+  }
+}

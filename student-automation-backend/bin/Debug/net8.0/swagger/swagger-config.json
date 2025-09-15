@@ -1,0 +1,57 @@
+{
+  "swagger": "3.0",
+  "info": {
+    "title": "Student Automation API",
+    "version": "v1",
+    "description": "Comprehensive API for Student Automation System with authentication, course management, grading, comments, and attendance tracking.",
+    "contact": {
+      "name": "API Support",
+      "email": "support@studentautomation.com"
+    }
+  },
+  "host": "localhost:5000",
+  "basePath": "/api",
+  "schemes": ["http", "https"],
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "JWT Authorization header using the Bearer scheme. Enter 'Bearer' [space] and then your token."
+    }
+  },
+  "security": [
+    {
+      "Bearer": []
+    }
+  ],
+  "endpoints": {
+    "authentication": "/api/auth",
+    "students": "/api/student",
+    "teachers": "/api/teacher",
+    "courses": "/api/course",
+    "grades": "/api/grade",
+    "comments": "/api/comment",
+    "attendance": "/api/attendance"
+  },
+  "roles": {
+    "Admin": {
+      "value": 0,
+      "description": "Full system access, can manage teachers and students"
+    },
+    "Teacher": {
+      "value": 1,
+      "description": "Can manage courses, grades, comments, and attendance for their assigned courses"
+    },
+    "Student": {
+      "value": 2,
+      "description": "Limited access to their own data (grades, comments, attendance)"
+    }
+  },
+  "attendance_status": {
+    "Present": 0,
+    "Absent": 1,
+    "Late": 2,
+    "Excused": 3
+  }
+}

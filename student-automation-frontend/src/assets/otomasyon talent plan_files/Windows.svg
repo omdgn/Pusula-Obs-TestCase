@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="157.558" height="49.274" viewBox="0 0 157.558 49.274">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_2" data-name="Path 2" d="M0,77H157.558v49.274H0Zm0,0" transform="translate(0 -77)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2" data-name="Group 2" transform="translate(-816.221 -649.463)">
+    <g id="Group_1" data-name="Group 1" transform="translate(816.221 649.463)" clip-path="url(#clip-path)">
+      <path id="Path_1" data-name="Path 1" d="M152.28,125.785H6.169a5.535,5.535,0,0,1-5.36-5.7v-36.8a5.538,5.538,0,0,1,5.36-5.7H152.28a5.538,5.538,0,0,1,5.361,5.7v36.8a5.536,5.536,0,0,1-5.361,5.7" transform="translate(-0.221 -77.135)"/>
+    </g>
+    <path id="dffa2308304672b87592ff72e0399c6c" d="M30.282,17.228V30.282c-4.944-.761-10.535-1.515-15.488-2.178V17.37Zm-16.835.142V27.813c-3.72-.54-7.719-.946-11.447-1.449V17.371H13.447Zm0-12.677V16.141c-3.853,0-7.593.016-11.447,0V6.163h.008c3.846-.6,7.578-.965,11.439-1.469ZM30.282,2V15.825c-5.137,0-10.343.3-15.488.316V4.357C19.929,3.554,25.132,2.721,30.282,2Z" transform="translate(825.859 657.822)" fill="#fff"/>
+    <text id="Windows" transform="translate(865 688.963)" fill="#fff" font-size="23" font-family="ArialMT, Arial"><tspan x="0" y="0">Windows</tspan></text>
+    <text id="Download_for" data-name="Download for" transform="translate(864 665.963)" fill="#fff" font-size="12" font-family="ArialMT, Arial"><tspan x="0" y="0">Download for</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+{
+  "record_attendance": {
+    "present": {
+      "studentId": "12345678-1234-1234-1234-123456789012",
+      "courseId": "87654321-4321-4321-4321-210987654321",
+      "status": 0,
+      "date": "2025-01-15T09:00:00Z",
+      "notes": "Student attended the full class"
+    },
+    "absent": {
+      "studentId": "12345678-1234-1234-1234-123456789012",
+      "courseId": "87654321-4321-4321-4321-210987654321",
+      "status": 1,
+      "date": "2025-01-15T09:00:00Z",
+      "notes": "Student was absent without notice"
+    },
+    "late": {
+      "studentId": "12345678-1234-1234-1234-123456789012",
+      "courseId": "87654321-4321-4321-4321-210987654321",
+      "status": 2,
+      "date": "2025-01-15T09:00:00Z",
+      "notes": "Student arrived 10 minutes late"
+    },
+    "excused": {
+      "studentId": "12345678-1234-1234-1234-123456789012",
+      "courseId": "87654321-4321-4321-4321-210987654321",
+      "status": 3,
+      "date": "2025-01-15T09:00:00Z",
+      "notes": "Student provided medical certificate"
+    }
+  },
+  "update_attendance": {
+    "change_to_excused": {
+      "status": 3,
+      "notes": "Student submitted doctor's note after class"
+    }
+  },
+  "status_codes": {
+    "0": "Present - Student attended the class",
+    "1": "Absent - Student did not attend",
+    "2": "Late - Student arrived after class started",
+    "3": "Excused - Student has valid excuse for absence/tardiness"
+  }
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="157.558" height="49.274" viewBox="0 0 157.558 49.274">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_2" data-name="Path 2" d="M0,77H157.558v49.274H0Zm0,0" transform="translate(0 -77)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0ed4fc"/>
+      <stop offset="1" stop-color="#0c57ef"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-816.221 -591.5)">
+    <g id="Group_1-2" data-name="Group 1" transform="translate(816.221 591.5)" clip-path="url(#clip-path)">
+      <path id="Path_1" data-name="Path 1" d="M152.28,125.785H6.169a5.535,5.535,0,0,1-5.36-5.7v-36.8a5.538,5.538,0,0,1,5.36-5.7H152.28a5.538,5.538,0,0,1,5.361,5.7v36.8a5.536,5.536,0,0,1-5.361,5.7" transform="translate(-0.221 -77.135)"/>
+    </g>
+    <text id="macOS" transform="translate(864 631)" fill="#fff" font-size="23" font-family="ArialMT, Arial"><tspan x="0" y="0">macOS</tspan></text>
+    <text id="Available_on_the" data-name="Available on the" transform="translate(864 609)" fill="#fff" font-size="12" font-family="ArialMT, Arial"><tspan x="0" y="0">Available on the</tspan></text>
+    <g id="App_Store__iOS_-Logo.wine" data-name="App_Store_(iOS)-Logo.wine" transform="translate(825.649 599.787)">
+      <path id="Path_1-2" data-name="Path 1" d="M26.1,0H6.606A6.6,6.6,0,0,0,0,6.606V26.1a6.6,6.6,0,0,0,6.606,6.6H26.1A6.606,6.606,0,0,0,32.705,26.1V6.606A6.609,6.609,0,0,0,26.1,0Z" fill="url(#linear-gradient)"/>
+      <path id="Path_2-2" data-name="Path 2" d="M118.454,139.335l.662-1.145a1.491,1.491,0,1,1,2.583,1.488l-6.381,11.045h4.615a2.042,2.042,0,0,1,1.684,2.976h-13.53a1.488,1.488,0,0,1,0-2.976h3.793l4.856-8.416-1.517-2.632a1.491,1.491,0,0,1,2.583-1.488Zm-5.739,15.9-1.431,2.481a1.491,1.491,0,1,1-2.583-1.488l1.063-1.839A2.547,2.547,0,0,1,112.715,155.232Zm12.32-4.5h3.871a1.488,1.488,0,1,1,0,2.976h-2.15l1.451,2.518a1.491,1.491,0,1,1-2.583,1.488q-3.667-6.358-5.5-9.524a4.116,4.116,0,0,1,.523-5.04Q122.115,145.663,125.035,150.731Z" transform="translate(-102.243 -131.822)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
