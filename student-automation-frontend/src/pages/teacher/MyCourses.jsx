@@ -1,13 +1,21 @@
 import { useState, useEffect } from "react";
-import { getMyCourses } from "../../services/teacherService";
+import { getMyCourses, getCourseStudents } from "../../services/teacherService";
 import {
-  BookOpen, Users, Clock, Calendar, CheckCircle, Eye, ClipboardList, BarChart3
+  BookOpen, Users, Clock, Calendar, CheckCircle, Eye, ClipboardList, BarChart3, Award
 } from "lucide-react";
+import CourseDetailsModal from "../../components/CourseDetailsModal";
+import AttendanceModal from "../../components/AttendanceModal";
+import GradesModal from "../../components/GradesModal";
 
 export default function TeacherMyCourses() {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [selectedCourse, setSelectedCourse] = useState(null);
+  const [students, setStudents] = useState([]);
+  const [showDetailsModal, setShowDetailsModal] = useState(false);
+  const [showAttendanceModal, setShowAttendanceModal] = useState(false);
+  const [showGradesModal, setShowGradesModal] = useState(false);
 
   useEffect(() => {
     const fetchCourses = async () => {
@@ -31,6 +39,21 @@ export default function TeacherMyCourses() {
     };
     fetchCourses();
   }, []);
+
+  const handleOpenModal = async (course, modalType) => {
+    setSelectedCourse(course);
+    try {
+      const studentsData = await getCourseStudents(course.id);
+      setStudents(studentsData);
+    } catch (err) {
+      console.error("Fetch students error:", err);
+      setStudents([]);
+    }
+
+    if (modalType === 'details') setShowDetailsModal(true);
+    if (modalType === 'attendance') setShowAttendanceModal(true);
+    if (modalType === 'grades') setShowGradesModal(true);
+  };
 
   const getStatusBadge = (status) => {
     const badges = {
@@ -199,16 +222,25 @@ export default function TeacherMyCourses() {
 
             {/* Course Actions */}
             <div className="flex gap-2">
-              <button className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
+              <button
+                onClick={() => handleOpenModal(course, 'details')}
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
+              >
                 <Eye className="w-4 h-4" />
                 Detaylar
               </button>
-              <button className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+              <button
+                onClick={() => handleOpenModal(course, 'attendance')}
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
+              >
                 <ClipboardList className="w-4 h-4" />
                 Yoklama
               </button>
-              <button className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
-                <BarChart3 className="w-4 h-4" />
+              <button
+                onClick={() => handleOpenModal(course, 'grades')}
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition"
+              >
+                <Award className="w-4 h-4" />
                 Not Girişi
               </button>
             </div>
@@ -227,6 +259,31 @@ export default function TeacherMyCourses() {
             Verdiğin dersler burada listelenecek.
           </p>
         </div>
+      )}
+
+      {/* Modals */}
+      {showDetailsModal && selectedCourse && (
+        <CourseDetailsModal
+          course={selectedCourse}
+          students={students}
+          onClose={() => setShowDetailsModal(false)}
+        />
+      )}
+
+      {showAttendanceModal && selectedCourse && (
+        <AttendanceModal
+          courseId={selectedCourse.id}
+          courseName={selectedCourse.title}
+          onClose={() => setShowAttendanceModal(false)}
+        />
+      )}
+
+      {showGradesModal && selectedCourse && (
+        <GradesModal
+          courseId={selectedCourse.id}
+          courseName={selectedCourse.title}
+          onClose={() => setShowGradesModal(false)}
+        />
       )}
     </div>
   );
